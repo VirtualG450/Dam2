@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ping3",
+            "request": "launch",
+            "mainClass": "ProgramServiciosProcesos.ping3",
+            "projectName": "Dam2_8b34938b"
+        },
+        {
+            "type": "java",
+            "name": "CreadorHilos",
+            "request": "launch",
+            "mainClass": "ProgramServiciosProcesos.CreadorHilos",
+            "projectName": "Dam2_8b34938b"
+        },
+        {
+            "type": "java",
+            "name": "Caso1JavaFX",
+            "request": "launch",
+            "mainClass": "example.Caso1JavaFX",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21.0.1/lib\" --add-modules javafx.controls,javafx.fxml",
+            "projectName": "Dam2_8b34938b"
+        },
+        {
+            "type": "java",
+            "name": "Ejemplo1javaFX",
+            "request": "launch",
+            "mainClass": "example.Ejemplo1javaFX",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21.0.1/lib\" --add-modules javafx.controls,javafx.fxml",
+            "projectName": "Dam2_8b34938b"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "hellofx.Main",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
