@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "DesarrolloInterfaces.TareaEvaluable1.Main",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21.0.1/lib\" --add-modules javafx.controls,javafx.fxml",
+            "projectName": "Dam2_8b34938b"
+        },
+        {
+            "type": "java",
             "name": "ping3",
             "request": "launch",
             "mainClass": "ProgramServiciosProcesos.ping3",
