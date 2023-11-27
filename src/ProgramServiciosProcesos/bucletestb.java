@@ -8,7 +8,7 @@ public class bucletestb extends Thread {
         this.nombre=nombre;
     }
 
-    public void run(){
+    public synchronized void run(){
         while (bucletest.tareas < 100) {
             System.out.println("Hilo "+nombre+" añadio 1");
             bucletest.tareas++;
