@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "bucletest",
+            "request": "launch",
+            "mainClass": "ProgramServiciosProcesos.bucletest",
+            "projectName": "Dam2_8b34938b"
+        },
+        {
+            "type": "java",
             "name": "main5",
             "request": "launch",
             "mainClass": "ProgramServiciosProcesos.main5",

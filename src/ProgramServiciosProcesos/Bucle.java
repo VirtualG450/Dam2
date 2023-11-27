@@ -8,7 +8,7 @@ public class Bucle extends Thread {
     }
 
     public void run() {
-        for (int i = 0;i<5;i++) {
+        for (int i = 0;i<50;i++) {
             System.out.println("Proceso "+nombre+" en "+i);
         }
     }
