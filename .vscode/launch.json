@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "main5",
+            "request": "launch",
+            "mainClass": "ProgramServiciosProcesos.main5",
+            "projectName": "Dam2_8b34938b"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "DesarrolloInterfaces.TareaEvaluable1.Main",
