@@ -26,7 +26,8 @@ public class principal {
         //Buscando como dividir un array lo mas parecido que encontre es crear otro array y
         //copiar una parte del array principal usando arraycopy
 
-        //Dividire el array principal en 4 partes, por lo cual hare 4 arrays
+        //Dividire el array principal en 4 partes, por lo cual hare 4 arrays, 
+        //se podria dividir por cuantos sean necesarios
         //primero divido el length del array principal en 4 partes iguales
         int partes = (temperaturas.length/4);
         //Despues hago los arrays del tamaño de las partes
@@ -71,5 +72,14 @@ public class principal {
                 System.out.println("El mayor del hilo 4 es: "+mayor4);
             }
         });t4.start();
+        //Creo que esto podria ser reducido a un solo thread con un bucle FOR que cambie
+        //el t1,t2... al que sea necesario junto a mayor* y array*
+
+        //Tambien otra cosa a tener en cuenta es que el rango dado para este ejercicio es muy
+        //bajo para que salga otro resultado que no sea 50, en un rango de -30 a 50 con un total
+        //de 3650 es practicamente imposible que no aparezca 50 en las 4 divisioens del array.
+        
+        //Se podria arreglar reduciendo el array principal a un numero como 80 o incrementando en
+        //cuantas partes se divide el mismo array principal
     }
 }
