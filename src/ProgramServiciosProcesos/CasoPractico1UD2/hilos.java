@@ -1,6 +1,6 @@
 package ProgramServiciosProcesos.CasoPractico1UD2;
 
-public class hilos extends Thread {
+public class hilos {
 
     //Despues de buscar un buen rato en internet el mejor metodo que encontre para obtener
     //el mayor numero del fue hacer un metodo que recibe como argumento el 
