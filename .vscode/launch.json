@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LanzadorHiloContador",
+            "request": "launch",
+            "mainClass": "ProgramServiciosProcesos.Videoconferencia1Diciembre.LanzadorHiloContador",
+            "projectName": "Dam2_8b34938b"
+        },
+        {
+            "type": "java",
             "name": "principal",
             "request": "launch",
             "mainClass": "ProgramServiciosProcesos.CasoPractico1UD2.principal",
