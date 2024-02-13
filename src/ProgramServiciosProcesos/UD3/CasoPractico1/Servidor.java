@@ -62,13 +62,21 @@ public class Servidor {
             resultado = parte1 / parte2;
 
         }
+        /*Seguramente se puede reducir esto con un switch pero despues de intentar varias horas
+        solo conseguia que el resultado fuera 0, despues de hacerlo de este metodo me di cuenta
+        de que el metodo matches que usaba para el clienteinput.contains no busca un caracter 
+        dentro del String sino compara cadenas de caracteres con el String entero, el metodo 
+        contains es el que necesitaba*/
+        
 
+        //Usando la clase PrintWriter al que indicamos como salida el outputstream enviamos
+        //de vuelta al cliente el resultado
         PrintWriter pr = new PrintWriter(soc.getOutputStream());
         pr.println(resultado);
         pr.flush();
         //Indicamos que se ha enviado el resultado y cerramos el socket
         System.out.println("Resultado enviado");
+        //Cerramos el socket para liberar recursos
         ss.close();
     }
 }
-
