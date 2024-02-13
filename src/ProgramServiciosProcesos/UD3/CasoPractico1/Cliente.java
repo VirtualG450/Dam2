@@ -1,9 +1,15 @@
 package ProgramServiciosProcesos.UD3.CasoPractico1;
+import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
+
+import ProgramServiciosProcesos.CasoPractico1UD2.principal;
 
     //El objetivos de este ejercicio es crear 2 aplicaciones java que funcionen como cliente y
     //servidor en la que el cliente introduzca dos numeros y una operacion a realizar, el servidor
@@ -35,9 +41,21 @@ public class Cliente {
         //Creamos un socket al que le indicamos conectarse a localhost en el puerto 8888
         
         Socket soc = new Socket("localhost", 8888);
+
+        //Juntamos los numeros y la operacion a realizar en un String y lo enviamos al servidor
+        PrintWriter pw = new PrintWriter(soc.getOutputStream());
+        pw.println(numero1+operacion+numero2);
+        pw.flush();
+
+        InputStreamReader in = new InputStreamReader(soc.getInputStream());
+        BufferedReader br = new BufferedReader(in);
+        String resultado = br.readLine();
+
+        System.out.println("El resultado es "+resultado);
         
-        //Cerramos el escaner
+        //Cerramos el escaner y el socket para liberar los recursos
         sc.close();
+        soc.close();
         
     }
 }
