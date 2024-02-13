@@ -9,9 +9,19 @@ public class Cliente {
         //Creamos el input del usuario usando scanner
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce el primer numero");
-        
-        //Solicitar al usuario los numeros y operacion a realizar que se almacenan en las variables
 
+        //Solicitar al usuario los numeros y operacion a realizar que se almacenan en las variables
+        int numero1 = sc.nextInt();
+        System.out.println("Introduce el segundo numero");
+        int numero2 = sc.nextInt();
+        System.out.println("Introduce la operacion a realizar suma(+),resta(-),multiplicacion(*) o division(/)");
+        String operacion = sc.nextLine();
+
+        System.out.println(numero1+" "+numero2+" "+operacion);
+        
+
+        //Cerramos el escaner
+        sc.close();
         
     }
 }
