@@ -1,15 +1,10 @@
 package ProgramServiciosProcesos.UD3.CasoPractico1;
 import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.net.InetAddress;
 import java.net.Socket;
-import java.net.UnknownHostException;
 import java.util.Scanner;
-
-import ProgramServiciosProcesos.CasoPractico1UD2.principal;
 
     //El objetivos de este ejercicio es crear 2 aplicaciones java que funcionen como cliente y
     //servidor en la que el cliente introduzca dos numeros y una operacion a realizar, el servidor
@@ -17,10 +12,6 @@ import ProgramServiciosProcesos.CasoPractico1UD2.principal;
     //cliente usando el mismo metodo
 
 public class Cliente {
-
-    //Variables necesarias para enviar al servidor y operacion a realizar
-    private int numero1,numero2;
-    private String operacion;
     public static void main(String[] args) throws IOException {
 
         //Creamos el input del usuario usando scanner
