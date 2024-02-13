@@ -15,7 +15,7 @@ public class Cliente {
     //Variables necesarias para enviar al servidor y operacion a realizar
     private int numero1,numero2;
     private String operacion;
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         //Creamos el input del usuario usando scanner
         Scanner sc = new Scanner(System.in);
@@ -33,13 +33,9 @@ public class Cliente {
 
         //Ahora que tenemos el input ya podemos hacer la conexion desde la parte del cliente
         //Creamos un socket al que le indicamos conectarse a localhost en el puerto 8888
-        try {
-            Socket soc = new Socket("localhost", 8888);
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        
+        Socket soc = new Socket("localhost", 8888);
+        
         //Cerramos el escaner
         sc.close();
         
