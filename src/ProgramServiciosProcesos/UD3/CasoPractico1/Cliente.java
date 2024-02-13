@@ -1,4 +1,8 @@
 package ProgramServiciosProcesos.UD3.CasoPractico1;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.net.UnknownHostException;
 import java.util.Scanner;
 
     //El objetivos de este ejercicio es crear 2 aplicaciones java que funcionen como cliente y
@@ -27,9 +31,15 @@ public class Cliente {
         String operacion = sc.nextLine();
         // Test sysout  System.out.println(numero1+" "+numero2+" "+operacion);
 
-        //Ahora que tenemos 
-        
-
+        //Ahora que tenemos el input ya podemos hacer la conexion desde la parte del cliente
+        //Creamos un socket al que le indicamos conectarse a localhost en el puerto 8888
+        try {
+            Socket soc = new Socket("localhost", 8888);
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         //Cerramos el escaner
         sc.close();
         
