@@ -33,28 +33,28 @@ public class Servidor {
         //Busco en el String los operadores y si coincide se ejecuta el codigo
         //Separo el String en 2 partes desde la ubicacion del operador que luego
         //paso a int para realizar la operacion
-        if (clienteinput.matches("+")){
+        if (clienteinput.contains("+")){
             System.out.println("Procesando suma");
-            String[] partes = clienteinput.split("+");
+            String[] partes = clienteinput.split("\\+");
             int parte1 = Integer.parseInt(partes[0]);
             int parte2 = Integer.parseInt(partes[1]);
             resultado = parte1 + parte2;
 
-        } else if (clienteinput.matches("-")){
+        } else if (clienteinput.contains("-")){
             System.out.println("Procesando resta");
             String[] partes = clienteinput.split("-");
             int parte1 = Integer.parseInt(partes[0]);
             int parte2 = Integer.parseInt(partes[1]);
             resultado = parte1 - parte2;
 
-        } else if (clienteinput.matches("*")){
+        } else if (clienteinput.contains("*")){
             System.out.println("Procesando multiplicacion");
-            String[] partes = clienteinput.split("*");
+            String[] partes = clienteinput.split("\\*");
             int parte1 = Integer.parseInt(partes[0]);
             int parte2 = Integer.parseInt(partes[1]);
             resultado = parte1 * parte2;
 
-        } else if (clienteinput.matches("/")){
+        } else if (clienteinput.contains("/")){
             System.out.println("Procesando division");
             String[] partes = clienteinput.split("/");
             int parte1 = Integer.parseInt(partes[0]);
